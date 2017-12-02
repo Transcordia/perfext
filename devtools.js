@@ -1,0 +1,1 @@
+chrome.devtools.panels.create("DynPerf", "icon.png", "panel.html", function(panel) {});

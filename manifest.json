@@ -1,0 +1,19 @@
+{
+  "name": "Dynatrace Stats",
+  "description": "An extension that shows page statistics similar to Dynatrace Performance Benchmark algorithms",
+  "version": "0.0.0",
+  "minimum_chrome_version": "10.0",
+  "devtools_page": "devtools.html",
+  "permissions": [
+    "tabs",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "background": { "scripts": ["background.js"] },
+  "browser_action": {
+      "default_title": "Show Dynatrace stats",
+      "default_icon": "icon.png"
+  },
+  "content_security_policy": "script-src 'self' 'unsafe-eval' https://www.gstatic.com; object-src 'self'",
+  "manifest_version": 2
+}

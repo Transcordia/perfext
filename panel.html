@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #mimechart {
+            width: 350px;
+            height: 350px;
+        }
+    </style>
+</head>
+<body>
+<fieldset>
+    <label for="gap">Gap Size (in ms)</label>
+    <input id="gap" type="number" value="5000"/>
+</fieldset>
+<fieldset>
+    <button id="summary">Perform Dynatrace Summary</button>
+</fieldset>
+
+<div id="main"></div>
+<h3>Resource by Type</h3>
+<div id="mimetransfer"></div>
+<div id="mimetime"></div>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script src="panel.js"></script>
+</body>
+</html>
