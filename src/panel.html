@@ -10,6 +10,10 @@
 </head>
 <body>
 <fieldset>
+    <input type="checkbox" id="chkEnabled" />
+    <label for="chkEnabled">Enabled</label>
+</fieldset>
+<fieldset>
     <label for="gap">Gap Size (in ms)</label>
     <input id="gap" type="number" value="5000"/>
 </fieldset>
@@ -19,9 +23,12 @@
 
 <div id="main"></div>
 <h3>Resource by Type</h3>
-<div id="mimetransfer"></div>
-<div id="mimetime"></div>
+<div id="chartTime"></div>
+<div id="chartSize"></div>
+
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/5.5.3/Rx.min.js"></script>
 <script src="panel.js"></script>
+
 </body>
 </html>
